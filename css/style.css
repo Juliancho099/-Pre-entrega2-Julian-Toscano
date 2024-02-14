@@ -58,7 +58,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url(../../img/hjb.png);
+  background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url(../img/hjb.png);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;

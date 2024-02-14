@@ -23,7 +23,7 @@
         width: 100%;
         @include Images;
         background-image: linear-gradient(rgb(40, 40, 40, 0.4),
-        rgb(40, 40, 40, 0.4)), url(../../img/hjb.png);
+        rgb(40, 40, 40, 0.4)), url(../img/hjb.png);
         @include flex (column wrap, center, center);
     }
 
