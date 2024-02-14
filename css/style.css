@@ -574,7 +574,6 @@ main {
     grid-column: span 2;
   }
   .form {
-    height: 90vh;
     padding: 3.5em;
   }
   /*Footer*/
