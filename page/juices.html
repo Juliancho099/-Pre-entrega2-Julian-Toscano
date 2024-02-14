@@ -4,327 +4,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harper Juice</title>
+    <!-- Description -->
+    <meta name="description" content="Nuestra gran variedad de jugos es apta para cualquier gusto, ven y pruebalos.">
+    <!-- Keywords -->
+    <meta name="keywords" content="jugos,energy,power,anana,frutilla,acai,detox,mango">
     <!-- Link de BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Link de Mi Css -->
-    <link rel="stylesheet" href="../css/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- iconos -->
     <script src="https://kit.fontawesome.com/deac8e3b26.js" crossorigin="anonymous"></script>
+        <!-- Link de Mi Css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Harper Juice</title>
 </head>
 
 <body>
     <!--Añade todo despues de aqui-->
-    <header class="contenedor">
+    <header class="header">
         <!-- colocar una imagen .ico -->
-        <div class="contenedor_logo">
+        <div class="header__logo">
             <h2>HARPER JUICE & COFFE</h2>
         </div>
-        <nav class="contenedor_menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./bowls.html">Bowls</a></li>
-                <li><a href="./coffes.html">Cafes</a></li>
-                <li><a href="./juices.html">Jugos</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li><a href="../index.html" class="nav__item">Inicio</a></li>
+                <li><a href="./bowls.html" class="nav__item">Bowls</a></li>
+                <li><a href="./coffes.html" class="nav__item">Cafes</a></li>
+                <li><a href="./juices.html" class="nav__item">Jugos</a></li>
+                <li><a href="./contact.html" class="nav__item">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="back-juice">
-        <section class="contenedor-jugos">
-            <div class="titulo">
+    <main class="main">
+        <section class="contenido">
+            <div class="contenido__titulo">
                 <h1>JUICES</h1>
-                <!-- <div class="desc"> -->
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio sint saepe, suscipit culpa
-                        commodi quam temporibus illo aliquam quod, dolore inventore odit deleniti alias cum accusantium
-                        dignissimos delectus quasi!</p>
-                <!-- </div> -->
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/dtx.png" alt="detox">
+                </figure>
+                <div class="carrito__info">
+                    <h2>DETOX</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="dtx-modal">Mas Informacion</label>
                     </div>
+
                     <input type="checkbox" id="dtx-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="dtx-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, espinaca y Manzana</p>
+                            <div class="carrito__cerrar">
+                                <label for="dtx-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="dtx-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/blc.png" alt="balance">
+                </figure>
+                <div class="carrito__info">
+                    <h2>BALANCE</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="blc-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="blc-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="blc-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, Zanahoria, Remolacha, Apio y Manzana.</p>
+                            <div class="carrito__cerrar">
+                                <label for="blc-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="blc-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/klo.png" alt="Kale-Obsession">
+                </figure>
+                <div class="carrito__info">
+                    <h2>KALE OBS</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="klo-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="klo-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="klo-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, Jengibre, limon, Kale y Manzana.</p>
+                            <div class="carrito__cerrar">
+                                <label for="klo-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="klo-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/fwl.png" alt="Firewall">
+                </figure>
+                <div class="carrito__info">
+                    <h2>FIREWALL</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="fwl-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="fwl-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="fwl-modal" class="cerrar-modal">cerrar</label>
+                            <p>kale, Limon, Naranja y Manzana</p>
+                            <div class="carrito__cerrar">
+                                <label for="fwl-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="fwl-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/gog.png" alt="Googler">
+                </figure>
+                <div class="carrito__info">
+                    <h2>GOOGLER</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="gog-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="gog-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="gog-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, Jengibre, limon y Manzana.</p>
+                            <div class="carrito__cerrar">
+                                <label for="gog-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="gog-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/stu.png" alt="Stand-Up">
+                </figure>
+                <div class="carrito__info">
+                    <h2>STAND UP</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="stu-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="stu-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="stu-modal" class="cerrar-modal">cerrar</label>
+                            <p>Banana, Frutilla y Naranja.</p>
+                            <div class="carrito__cerrar">
+                                <label for="stu-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="stu-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/stc.png" alt="Stormshield">
+                </figure>
+                <div class="carrito__info">
+                    <h2>STORM SHIELD</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="stc-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="stc-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="stc-modal" class="cerrar-modal">cerrar</label>
+                            <p>Mango, Anana y Naranja.</p>
+                            <div class="carrito__cerrar">
+                                <label for="stc-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="stc-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
+            <div class="carrito">
+                <figure>
+                    <img src="../img/blm.png" alt="Bladermaster">
+                </figure>
+                <div class="carrito__info">
+                    <h2>BLADDER</h2>
                     <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+                    <div class="carrito__bmodal">
                         <label for="blm-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="blm-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="blm-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, Maracuya y Manzana.</p>
+                            <div class="carrito__cerrar">
+                                <label for="blm-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="blm-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/cst.png" alt="C-Shot">
+                </figure>
+                <div class="carrito__info">
+                    <h2>C-SHOT</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="cst-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="cst-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="cst-modal" class="cerrar-modal">cerrar</label>
+                            <p>Anana, Zanahoria, Naranja y Manzana.</p>
+                            <div class="carrito__cerrar">
+                                <label for="cst-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="cst-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
+            <div class="carrito">
+                <figure>
+                    <img src="../img/bfs.png" alt="Berryfest">
+                </figure>
+                <div class="carrito__info">
+                    <h2>BERRY FEST</h2>
                     <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+                    <div class="carrito__bmodal">
                         <label for="bfs-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="bfs-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="bfs-modal" class="cerrar-modal">cerrar</label>
+                            <p>Acai, Frutilla, Arandanos y Naranja.</p>
+                            <div class="carrito__cerrar">
+                                <label for="bfs-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="bfs-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/pmd.png" alt="Energy">
+                </figure>
+                <div class="carrito__info">
+                    <h2>Energy</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="pmd-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="pmd-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="pmd-modal" class="cerrar-modal">cerrar</label>
+                            <p>Banana, Frutilla, Leche y Vainilla.</p>
+                            <div class="carrito__cerrar">
+                                <label for="pmd-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="pmd-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="jugos">
-                <div class="figure">
-                    <img src="../img/juices.png" alt="jugo">
-                </div>
-                <div class="info">
-                    <h2>JUGOS</h2>
-                    <P>DESCRIPCION</P>
-                    <div class="boton-modal">
+            <div class="carrito">
+                <figure>
+                    <img src="../img/pms.png" alt="Veganpower">
+                </figure>
+                <div class="carrito__info">
+                    <h2>VEGAN POWER</h2>
+                    <P>$4100</P>
+                    <div class="carrito__bmodal">
                         <label for="pms-modal">Mas Informacion</label>
                     </div>
                     <input type="checkbox" id="pms-modal">
-                    <div class="contenedor-modal">
-                        <div class="contenido-modal">
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
                             <h2>Ingredientes</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div class="btn-cerrar">
-                                <label for="pms-modal" class="cerrar-modal">cerrar</label>
+                            <p>Arandanos, Ciruelas, Banana y Leche de Almd.</p>
+                            <div class="carrito__cerrar">
+                                <label for="pms-modal">cerrar</label>
                             </div>
                         </div>
+                        <label for="pms-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="banner_footer">
+    <footer class="footer">
         <div class="footer_texto">
             <h6>@HARPER JUICE</h6>
         </div>
-        <div class="footer_iconos">
-            <ul class="iconos_socialicons">
-                <li><a href="https://www.instagram.com/harperjuice/" target="_blank"><i
+        <div class="footer__iconos">
+            <ul class="footer__socialicons">
+                <li><a href="https://www.instagram.com/harperjuice/" target="_blank" class="footer__socialicon"><i
                             class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/harperjuiceArg" target="_blank"><i
+                <li><a href="https://twitter.com/harperjuiceArg" target="_blank" class="footer__socialicon"><i
                             class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@harperjuicecoffeestore9564" target="_blank"><i
-                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.youtube.com/@harperjuicecoffeestore9564" target="_blank"
+                        class="footer__socialicon"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </div>
     </footer>
     <!--No añadas mas despues de aqui-->
 
     <!-- link scrypt bs -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

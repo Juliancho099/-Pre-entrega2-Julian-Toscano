@@ -1,0 +1,55 @@
+/*Formulario Mobile*/
+
+.form {
+    background-color: #ccc;
+    padding: 0 1.8em;
+
+    .container {
+        max-width: 1170px;
+        padding: 1.5em;
+        min-height: 80vh;
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contactwrapper {
+        margin: 20px;
+        box-shadow: 0 0 20px 0 #002fff4d;
+        text-align: center;
+
+        >* {
+            padding: .5em;
+        }
+
+        &__fondo {
+
+            background-color: nth($colores, 14 );
+
+            h3 {
+                margin-top: 15px;
+            }
+
+            form {
+                button {
+
+                    &:hover,
+                    &:focus {
+                        background-color: nth($colores, 11);
+                        color: whitesmoke;
+                        transition: all .2s;
+                        outline: 0;
+                    }
+                }
+            }
+
+            &__block {
+                display: flex;
+                flex-direction: column;
+                gap: $gap-base - 5;
+                padding: $padding-base;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/*Footer*/
+
+.footer{
+    background: nth($colores, 5 );
+    @include flex (column, space-around, center);
+    padding: 10px;
+    border-top: 1px solid #000;
+
+    &__texto{
+
+        h6{
+            font-size: 1.3rem;
+        }
+    }
+
+    &__iconos{
+
+        margin-right: 30px;
+
+        ul{
+            list-style: none;
+            @include flex (row, center, center);
+            gap: $gap-base * 3;
+            font-size: 1.6rem;
+            margin-top: 3px;
+        }
+    }
+
+    &__socialicon{
+        color: nth($colores, 1 );
+    }
+}

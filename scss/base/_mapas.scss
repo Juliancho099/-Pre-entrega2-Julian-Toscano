@@ -1,0 +1,20 @@
+// Imports
+
+@import './variables';
+
+// Botones carrito
+
+$carrito:(
+    bg-carrito: nth($colores , 6 ),
+    color: nth($colores , 1 ),
+    hover: nth($colores , 7 )
+);
+
+// Botones normales
+
+
+$normales:(
+    bg-normales: nth($colores , 6 ),
+    color: nth($colores , 6 ),
+    bg-hover: nth($colores , 6 ),
+);

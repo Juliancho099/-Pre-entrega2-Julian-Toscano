@@ -1,0 +1,255 @@
+// Media queries Tablet
+
+/*MQ Tablet*/
+
+@media(min-width: 768px){
+    .header{
+        @include flex(row,space-evenly, center);
+
+        &__logo{
+
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+
+        .nav{
+            margin-top: 3px;
+        }
+    }
+
+    /*Banner*/
+
+    /*Caracteristicas, video y sucursales*/
+
+    .banner{
+        
+        &__contenido{
+            align-items: flex-start;
+            padding: 2em;
+
+        }
+
+        &__titulo{
+            font-size: 2rem;
+        }
+
+        &__texto{
+            width: $width-base - 30;
+            text-align: start;
+        }
+
+        &__boton{
+            border-radius: 0;
+            font-size: 1.2rem;
+        }
+
+        &__video{
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        &__caracter{
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        &__container{
+
+            margin-top: 5px;
+
+            video{
+                width: 390px;
+            }
+        }
+
+        &__sucursales{
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        &__listas--sucursales{
+
+            li{
+                border-radius: 0;
+                font-size: 1em;
+            }
+        }
+
+        &__img{
+            
+            img{
+                width: 350px;
+                margin-left: 110px;
+            }
+        }
+    }
+
+    /*Pagina De Bowls*/
+
+    .contain{
+        @include columnas(repeat(2, minmax(200px, 700px)));
+        justify-items: center;
+
+        &__titulo{
+            grid-column: span 2;
+        }
+
+        &__bowls:last-of-type{
+            grid-column: span 2;
+            width: 50%;
+        }
+    }
+
+    /*Carrito cofes y juices*/
+
+    .cafes{
+        @include columnas(repeat(2, minmax(200px, 1fr)));
+        @include rows(50px repeat(4, minmax(200px, 1fr)) 50px repeat(2, minmax(200px, 1fr)));
+        gap: $gap-base *3 $gap-base - 5;
+
+        &__titulo{
+            grid-column: span 2;
+        }
+
+        .carrito{
+
+            &__contentm{
+                width: $width-base;
+            }
+        }
+    }
+
+    .contenido{
+        @include columnas(repeat(2, minmax(200px, 1fr)));
+        @include rows(2% repeat(5, minmax(300px, 1fr)));
+        padding: 1em;
+
+        &__titulo{
+            grid-column: span 2;
+        }
+    }
+
+    .form{
+        height: 90vh;
+        padding: 3.5em;
+    }
+
+    /*Footer*/
+
+    .footer{
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+
+}
+
+// Media queries Desktop
+
+/*Mq Desktop*/
+
+@media(min-width: 1024px){
+
+    /*Index*/
+
+    .banner{
+
+        &__contenido{
+            padding: 0 3em;
+        }
+
+        &__titulo{
+            font-size: 2.3rem;
+        }
+
+        &__Texto{
+            font-size: 1.3rem;
+            width: $width-base - 80%;
+        }
+    }
+
+    /*Caracteristicas, video y sucursales*/
+
+    .banner{
+        
+        &__video{
+            justify-content: space-around;
+        }
+
+        &__container{
+
+            video{
+                width: 430px;
+            }
+        }
+
+        &__sucursales{
+            justify-content: space-around;
+        }
+
+        &__img{
+
+            img{
+                width: 400px;
+                margin-left: 110px;
+            }
+        }
+    }
+
+    /*Pagina de Bowls*/
+
+    .contain{
+        @include columnas(repeat(3,1fr));
+        @include rows((50px 100%));
+        width: $width-base;
+        justify-content: space-between;
+
+        &__titulo{
+            grid-column: span 3;
+        }
+
+        &__bowls{
+            align-self: baseline;
+
+            &:last-of-type{
+                grid-column: span 1;
+                width: $width-base;
+            }
+        }
+    }
+
+    /*Carrito: cafes y juices*/
+
+    .cafes{
+        @include columnas(repeat(4, minmax(200px, 1fr)));
+        @include rows((60px repeat(2, 2fr) 60px 2fr));
+        gap: $gap-base * 3 $gap-base;
+
+        &__titulo{
+            grid-column: span 4;
+            padding: .5em;
+        }
+
+        .carrito{
+
+            &__info{
+                padding: 0;
+            }
+        }
+    }
+
+    .contenido{
+        @include columnas(repeat(4, minmax(200px, 32.80%)));
+        @include rows((4% repeat(3, minmax(300px, 1fr))));
+        padding: 1.3em;
+
+        &__titulo{
+            grid-column: span 4;
+            padding: $padding-base + 10;
+        }
+    }
+
+    
+}
+

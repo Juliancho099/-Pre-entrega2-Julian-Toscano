@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harper Juice</title>
+    <!-- Description -->
+    <meta name="description" content="Que esperas para ver la gran variedad de cafes hechos a la medida de todo publico, ofrecemos tanto frios como calientes.">
+    <!-- Keywords -->
+    <meta name="keywords" content="Organico,iced,cafes,protein,late,americano">
     <!-- Link de BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Iconos -->
+        <script src="https://kit.fontawesome.com/deac8e3b26.js" crossorigin="anonymous"></script>
     <!-- Link de Mi Css -->
-    <link rel="stylesheet" href="../css/Styles.css">
-    <script src="https://kit.fontawesome.com/deac8e3b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Harper Juice</title>
 </head>
 
 <body>
     <!--Añade todo despues de aqui-->
-    <header class="contenedor">
+    <header class="header">
         <!-- colocar una imagen .ico -->
-        <div class="contenedor_logo">
+        <div class="header__logo">
             <h2>HARPER JUICE & COFFE</h2>
         </div>
-        <nav class="contenedor_menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./bowls.html">Bowls</a></li>
-                <li><a href="./coffes.html">Cafes</a></li>
-                <li><a href="./juices.html">Jugos</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li><a href="../index.html" class="nav__item">Inicio</a></li>
+                <li><a href="./bowls.html" class="nav__item">Bowls</a></li>
+                <li><a href="./coffes.html" class="nav__item">Cafes</a></li>
+                <li><a href="./juices.html" class="nav__item">Jugos</a></li>
+                <li><a href="./contact.html" class="nav__item">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,355 +40,357 @@
             <div class="cafes__titulo">
                 <h1>CAFES</h1>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/espresso.jpeg" alt="">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>ESPRESSO</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$1600</p>
+                    <div class="carrito__bmodal">
+                        <label for="esp-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="esp-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso Chico, se usa un solo shot de cafe de especialidad</p>
+                            <div class="carrito__cerrar">
+                                <label for="esp-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="esp-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/machiato.jpg" alt="">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Machiato</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$1800</p>
+                    <div class="carrito__bmodal">
+                        <label for="mac-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="mac-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso chico, se usa un solo shot de cafe mas la espuma de la leche vaporizada</p>
+                            <div class="carrito__cerrar">
+                                <label for="mac-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="mac-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/doppio.png" alt="">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Doppio</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$1900</p>
+                    <div class="carrito__bmodal">
+                        <label for="dop-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="dop-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso chico, se usa los dos shots de cafe de especialidad</p>
+                            <div class="carrito__cerrar">
+                                <label for="dop-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="dop-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/latte.png" alt="">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Latte</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$2100</p>
+                    <div class="carrito__bmodal">
+                        <label for="lat-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="lat-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso Grande, se usa un shot de cafe mas leche vaporizada a eleccion.</p>
+                            <div class="carrito__cerrar">
+                                <label for="lat-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="lat-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/mocca.png" alt="Mocca">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Mocca</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$2200</p>
+                    <div class="carrito__bmodal">
+                        <label for="moc-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="moc-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso Grande, se usa un shot de cafe, salsa de chocolate, cacao y leche vaporizada a eleccion.</p>
+                            <div class="carrito__cerrar">
+                                <label for="moc-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="moc-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/Capuchino.png" alt="Capuchino">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Capuchino</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$2100</p>
+                    <div class="carrito__bmodal">
+                        <label for="cap-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="cap-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso Grande, se usan los dos shots de cafe, cacao y canela (Opcionales) y leche vaporizada a eleccion.</p>
+                            <div class="carrito__cerrar">
+                                <label for="cap-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="cap-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/flat.png" alt="Flatwhite">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Flat White</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$2300</p>
+                    <div class="carrito__bmodal">
+                        <label for="fla-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="fla-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso Mediano, se usan dos shots de cafe mas leche vaporizada a eleccion.</p>
+                            <div class="carrito__cerrar">
+                                <label for="fla-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="fla-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
                     <img src="../img/Americano.png" alt="American">
                 </figure>
-                <div class="cafes__info">
+                <div class="carrito__info">
                     <h3>Americano</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                    <p>$2300</p>
+                    <div class="carrito__bmodal">
+                        <label for="ame-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="ame-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Vaso mediano, se usan los dos shots de cafe mas colchon de agua caliente.</p>
+                            <div class="carrito__cerrar">
+                                <label for="ame-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="ame-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
             <div class="cafes__titulo">
                 <h2>ICED COFFES</h2>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
-                    <img src="../img/espresso.jpeg" alt="">
+                    <img src="../img/icm.png" alt="iced-mocca">
                 </figure>
-                <div class="cafes__info">
-                    <h3>ESPRESSO</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                <div class="carrito__info">
+                    <h3>Ice Mocca</h3>
+                    <p>$2100</p>
+                    <div class="carrito__bmodal">
+                        <label for="icm-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="icm-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Se usa un shot de cafe, cacao, salsa de chocolate y leche descremada.</p>
+                            <div class="carrito__cerrar">
+                                <label for="icm-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="icm-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
-                    <img src="../img/espresso.jpeg" alt="">
+                    <img src="../img/icl.png" alt="iced-latte">
                 </figure>
-                <div class="cafes__info">
-                    <h3>ESPRESSO</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                <div class="carrito__info">
+                    <h3>Ice Latte</h3>
+                    <p>$2200</p>
+                    <div class="carrito__bmodal">
+                        <label for="icl-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="icl-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Se usa un shot de cafe, mas leche descremada.</p>
+                            <div class="carrito__cerrar">
+                                <label for="icl-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="icl-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
-                    <img src="../img/espresso.jpeg" alt="">
+                    <img src="../img/icb.png" alt="iced-black">
                 </figure>
-                <div class="cafes__info">
-                    <h3>ESPRESSO</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                <div class="carrito__info">
+                    <h3>Ice Black</h3>
+                    <p>$2300</p>
+                    <div class="carrito__bmodal">
+                        <label for="icb-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="icb-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Se usan los dos shots de cafe, mas colchon de agua.</p>
+                            <div class="carrito__cerrar">
+                                <label for="icb-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="icb-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
-            <div class="cafes__items">
+            <div class="carrito">
                 <figure>
-                    <img src="../img/espresso.jpeg" alt="">
+                    <img src="../img/pic.png" alt="Protein-coffe">
                 </figure>
-                <div class="cafes__info">
-                    <h3>ESPRESSO</h3>
-                    <p>$1200</p>
-                    <div class="cafes__boton-modal">
-                        <label for="btn-modal">
+                <div class="carrito__info">
+                    <h3>Protein Ice Coffee</h3>
+                    <p>$5600</p>
+                    <div class="carrito__bmodal">
+                        <label for="pic-modal">
                             Ingredientes
                         </label>
                     </div>
 
-                    <input type="checkbox" id="btn-modal">
+                    <input type="checkbox" id="pic-modal">
 
-                    <div class="cafes__modal">
-                        <div class="cafes__contentm">
-                            <h2>Bienvenido</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illo?</p>
-                            <div class="cafes__btn-cerrar">
-                                <label for="btn-modal">Cerrar</label>
+                    <div class="carrito__modal">
+                        <div class="carrito__contentm">
+                            <h2>Preparacion</h2>
+                            <p>Se usan los dos shots de cafe, proteina de DDL, canela (Opcional) y leche descremada.</p>
+                            <div class="carrito__cerrar">
+                                <label for="pic-modal">Cerrar</label>
                             </div>
                         </div>
-                        <label for="btn-modal" class="cafes__cerrarmodal"></label>
+                        <label for="pic-modal" class="carrito__cerrarm"></label>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="banner_footer">
-            <div class="footer_texto">
-                <h6>@HARPER JUICE</h6>
-            </div>
-            <div class="footer_iconos">
-                <ul class="iconos_socialicons">
-                    <li><a href="https://www.instagram.com/harperjuice/" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/harperjuiceArg" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/@harperjuicecoffeestore9564" target="_blank"><i
-                                class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="footer_texto">
+            <h6>@HARPER JUICE</h6>
+        </div>
+        <div class="footer__iconos">
+            <ul class="footer__socialicons">
+                <li><a href="https://www.instagram.com/harperjuice/" target="_blank" class="footer__socialicon"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/harperjuiceArg" target="_blank" class="footer__socialicon"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/@harperjuicecoffeestore9564" target="_blank"
+                        class="footer__socialicon"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <!--No añadas mas despues de aqui-->
 
     <!-- link scrypt bs -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
