@@ -9,22 +9,27 @@
     width: $width-base;
     @include flex (column, center, center);
     padding: 20px;
-    background-color: nth($colores , 5 );
+    background-color: nth($colores , 5);
     border-bottom: 1px solid #000;
 
     &__logo {
 
         h2 {
-            color: nth($colores , 13 );
             font-size: 1.2rem;
             width: $width-base;
             text-align: center;
+
+            a {
+                text-decoration: none;
+                color: nth($colores , 13);
+                cursor: pointer;
+            }
         }
     }
 }
 
-.nav{
-    &__lista{
+.nav {
+    &__lista {
         @include flex(row wrap, center, center);
         gap: $gap-base - 5;
         list-style: none;
@@ -32,15 +37,15 @@
         margin-right: 25px;
     }
 
-    &__item{
+    &__item {
         text-decoration: none;
         text-transform: uppercase;
-        color: nth($colores , 11 );
+        color: nth($colores , 11);
         transition: all 100ms;
 
-        &:hover{
-            color: nth($colores, 9 );
-            border-bottom: 2px solid nth($colores, 11 );
+        &:hover {
+            color: nth($colores, 9);
+            border-bottom: 2px solid nth($colores, 11);
         }
     }
 }
